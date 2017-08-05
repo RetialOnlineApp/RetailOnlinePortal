@@ -15,6 +15,7 @@
     <!-- end: GOOGLE FONTS -->
     <!-- start: MAIN CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/themify-icons/themify-icons.min.css">
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
@@ -437,33 +438,49 @@
                                                         Persnal Info
                                                     </legend>
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-7">
                                                             <div class="form-group">
                                                                 <label class="control-label">
-                                                                    Shop Name
+                                                                    First Name
                                                                 </label>
-                                                                <input placeholder="Peter" class="form-control" id="firstname" name="firstname" type="text">
+                                                                <span class="input-icon">
+                                                                    <input placeholder="Vivek" class="form-control" id="firstname" name="firstname" type="text">
+                                                                <i class="ti-user"></i> </span>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="control-label">
                                                                     Last Name
                                                                 </label>
-                                                                <input placeholder="Clark" class="form-control" id="lastname" name="lastname" type="text">
+                                                                <span class="input-icon">
+                                                                    <input placeholder="Munjewar" class="form-control" id="firstname" name="lastname" type="text">
+                                                                <i class="ti-user"></i> </span>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="control-label">
                                                                     Email Address
                                                                 </label>
-                                                                <input placeholder="peter@example.com" class="form-control" id="email" name="email" type="email">
+                                                                <span class="input-icon">
+                                                                    <input placeholder="merchant@retailonline.com" class="form-control" id="firstname" name="email" type="email">
+                                                                <i class="fa fa-envelope-o"></i> </span>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="control-label">
-                                                                    Phone
+                                                                    Mobile
                                                                 </label>
-                                                                <input placeholder="(641)-734-4763" class="form-control" id="phone" name="email" type="email">
+                                                                <span class="input-icon">
+                                                                    <input placeholder="9700515137" class="form-control" id="firstname" name="mobile" type="text">
+                                                                <i class="fa fa-mobile"></i> </span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Date Of Birth
+                                                                </label>
+                                                                <span class="input-icon">
+                                                                    <input placeholder="20 May 1992" class="form-control datepicker" id="firstname" name="dob" type="text">
+                                                                <i class="fa fa-calendar-o"></i> </span>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label>
                                                                     Image Upload
@@ -471,7 +488,6 @@
                                                                 <div class="fileinput fileinput-new" data-provides="fileinput">
                                                                     <div class="fileinput-new thumbnail"><img src="assets/images/avatar-1-xl.jpg" alt="">
                                                                     </div>
-                                                                    <div class="fileinput-preview fileinput-exists thumbnail"></div>
                                                                     <div class="user-edit-image-buttons">
                                                                         <span class="btn btn-azure btn-file"><span class="fileinput-new"><i class="fa fa-picture"></i> Select image</span><span class="fileinput-exists"><i class="fa fa-picture"></i> Change</span>
                                                                         <input type="file">
@@ -491,22 +507,55 @@
                                                     </legend>
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <div class="form-group">
+                                                             <div class="form-group">
                                                                 <label class="control-label">
-                                                                    Facebook
+                                                                    Shop Name
                                                                 </label>
                                                                 <span class="input-icon">
-                                                                        <input class="form-control" placeholder="Text Field" type="text">
-                                                                        <i class="fa fa-facebook"></i> </span>
+                                                                    <input placeholder="Super Market" class="form-control" id="firstname" name="shopname" type="text">
+                                                                <i class="ti-home"></i> </span>
+                                                            </div>
+                                                            
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    City
+                                                                </label>
+                                                                <span class="input-icon">
+                                                                    <input placeholder="Nagpur" class="form-control"  name="city" type="email">
+                                                                <i class="fa fa-"></i> </span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Area
+                                                                </label>
+                                                                <span class="input-icon">
+                                                                    <input placeholder="Shivaji Nagar" class="form-control" id="firstname" name="mobile" type="text">
+                                                                <i class="fa fa-mobile"></i> </span>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
+                                                        <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Service Type
+                                                                </label>
+                                                                <span class="input-icon">
+                                                                    <input placeholder="Vegitables" class="form-control"  name="service" type="text">
+                                                                <i class="ti-home"></i> </span>
+                                                            </div>
                                                             <div class="form-group">
                                                                 <label class="control-label">
-                                                                    Github
+                                                                    Landmark
                                                                 </label>
                                                                 <span class="input-icon">
                                                                         <input class="form-control" placeholder="Text Field" type="text">
+                                                                        <i class="fa fa-github"></i> </span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Pincode
+                                                                </label>
+                                                                <span class="input-icon">
+                                                                        <input class="form-control" placeholder="500019" type="text">
                                                                         <i class="fa fa-github"></i> </span>
                                                             </div>
                                                         </div>
@@ -605,6 +654,7 @@
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
+<script src="vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 <script>
 jQuery(document).ready(function() {
     Main.init();

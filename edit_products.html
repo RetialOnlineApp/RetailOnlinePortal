@@ -1,8 +1,16 @@
 <!DOCTYPE html>
+<!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
+<!--<![endif]-->
+<!-- start: HEAD -->
 
 <head>
-    <title>Products</title>
+    <title>Edit Product</title>
+    <!-- start: META -->
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -24,9 +32,11 @@
     <!-- start: CLIP-TWO CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/plugins.css">
-    <link rel="stylesheet" href="assets/css/themes/theme-2.css" id="skin_color" />
+    <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
     <!-- end: CLIP-TWO CSS -->
     <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="screen">
+    <link href="vendor/DataTables/css/DT_bootstrap.css" rel="stylesheet" media="screen">
     <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 </head>
 <!-- end: HEAD -->
@@ -72,7 +82,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="active open">
                             <a href="javascript:void(0)">
                                 <div class="item-content">
                                     <div class="item-media">
@@ -84,7 +94,7 @@
                                 </div>
                             </a>
                             <ul class="sub-menu">
-                                <li>
+                                <li class="active">
                                     <a href="edit_products.html">
                                             <span class="title"> Edit Products</span>
                                         </a>
@@ -109,13 +119,13 @@
                             </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="table_basic.html">
+                                    <a href="manage_orders.html">
                                             <span class="title">Manage Orders</span>
                                         </a>
                                 </li>
                                 <li>
                                     <a href="table_responsive.html">
-                                            <span class="title">Setting</span>
+                                            <span class="title">Invoices</span>
                                         </a>
                                 </li>
                             </ul>
@@ -205,188 +215,103 @@
                         </li>
                         <!-- end: USER OPTIONS DROPDOWN -->
                     </ul>
+                    <!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+                    <div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+                        <div class="arrow-left"></div>
+                        <div class="arrow-right"></div>
+                    </div>
+                    <!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
                 </div>
                 <!-- end: NAVBAR COLLAPSE -->
             </header>
             <!-- end: TOP NAVBAR -->
             <div class="main-content">
                 <div class="wrap-content container" id="container">
-                    <!-- ============================================================================================== -->
-                    <!-- start: YOUR CONTENT HERE -->
+                    <!-- start: DYNAMIC TABLE -->
                     <div class="container-fluid container-fullw bg-white">
                         <div class="row">
                             <div class="col-md-12">
-                                <table class="table table-striped table-hover" id="sample-table-2">
-                                    <thead style="background-color: lightgreen;">
+                                <table class="table table-striped table-bordered table-hover table-full-width" id="sample_2">
+                                    <thead>
                                         <tr>
-                                            <th class="center">Image</th>
+                                            <th>Sr No.</th>
+                                            <th>Image</th>
                                             <th>Name</th>
-                                            <th class="hidden-xs">Unit Price</th>
-                                            <th class="hidden-xs">Unit</th>
-                                            <th class="hidden-xs">Status</th>
-                                            <th></th>
+                                            <th> Unit Price</th>
+                                            <th>Unit</th>
+                                            <th>Is Available</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="center"><img src="assets/images/avatar-1.jpg" class="img-rounded" alt="image"></td>
-                                            <td>Onion</td>
-                                            <td class="hidden-xs">
-                                                <input type="text" name="name">
-                                            </td>
-                                            <td class="hidden-xs">
-                                                <select>
-                                                    <option>Kg</option>
-                                                    <option>Each</option>
-                                                    <option>Dozon</option>
-                                                    <</select>
-                                            </td>
-                                            <td class="hidden-xs">
-                                                <div class="checkbox">
-                                                    <input data-switchery="true" style="display: none;" class="js-switch" checked="" type="checkbox">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="center"><img src="assets/images/avatar-2.jpg" class="img-rounded" alt="image"></td>
-                                            <td>Brinjal</td>
-                                            <td class="hidden-xs">
-                                                <input type="text" name="name">
-                                            </td>
-                                            <td class="hidden-xs">
-                                                <select>
-                                                    <option>Kg</option>
-                                                    <option>Each</option>
-                                                    <option>Dozon</option>
-                                                    <</select>
-                                            </td>
-                                            <td class="hidden-xs">
-                                                <div class="checkbox">
-                                                    <input data-switchery="true" style="display: none;" class="js-switch" checked="" type="checkbox">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="center"><img src="assets/images/avatar-3.jpg" class="img-rounded" alt="image"></td>
-                                            <td>Tomato</td>
-                                            <td class="hidden-xs">
-                                                <input type="text" name="name">
-                                            </td>
-                                            <td class="hidden-xs">
-                                                <select>
-                                                    <option>Kg</option>
-                                                    <option>Each</option>
-                                                    <option>Dozon</option>
-                                                    <</select>
-                                            </td>
-                                            <td class="hidden-xs">
-                                                <div class="checkbox">
-                                                    <input data-switchery="true" style="display: none;" class="js-switch" checked="" type="checkbox">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                            <td>1</td>
                                             <td class="center"><img src="assets/images/avatar-4.jpg" class="img-rounded" alt="image"></td>
                                             <td>Potato</td>
-                                            <td class="hidden-xs">
-                                                <input type="text" name="name">
+                                            <td class="hidden-xs" id="unit-price">
+                                                45
                                             </td>
                                             <td class="hidden-xs">
-                                                <select>
-                                                    <option>Kg</option>
-                                                    <option>Each</option>
-                                                    <option>Dozon</option>
-                                                    <</select>
+                                                Kg
                                             </td>
                                             <td class="hidden-xs">
                                                 <div class="checkbox">
                                                     <input data-switchery="true" style="display: none;" class="js-switch" checked="" type="checkbox">
                                                 </div>
                                             </td>
+                                            <td>
+                                                <a href="#" class="edit-row-data">
+                                                        Edit
+                                                    </a></td>
+                                            <td>
+                                                <a href="#" class="delete-row">
+                                                        Delete
+                                                    </a></td>
                                         </tr>
                                         <tr>
+                                            <td>2</td>
                                             <td class="center"><img src="assets/images/avatar-5.jpg" class="img-rounded" alt="image"></td>
                                             <td>Ginger</td>
                                             <td class="hidden-xs">
-                                                <input type="text" name="name">
+                                                25
                                             </td>
                                             <td class="hidden-xs">
-                                                <select>
-                                                    <option>Kg</option>
-                                                    <option>Each</option>
-                                                    <option>Dozon</option>
-                                                    <</select>
+                                                Kg
                                             </td>
                                             <td class="hidden-xs">
                                                 <div class="checkbox">
                                                     <input data-switchery="true" style="display: none;" class="js-switch" checked="" type="checkbox">
                                                 </div>
                                             </td>
+                                            <td>
+                                                <a href="#" class="edit-row">
+                                                        Edit
+                                                    </a></td>
+                                            <td>
+                                                <a href="#" class="delete-row">
+                                                        Delete
+                                                    </a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ol class="pagination pull-right">
-                                    <li class="prev disabled">
-                                        <a href="#">
-                                                    Prev
-                                                </a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="#">
-                                                    1
-                                                </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                                    2
-                                                </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                                    3
-                                                </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                                    4
-                                                </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                                    5
-                                                </a>
-                                    </li>
-                                    <li class="next">
-                                        <a href="#">
-                                                    Next
-                                                </a>
-                                    </li>
-                                </ol>
+                    </div>
+                    <!-- end: DYNAMIC TABLE -->
+                    <!-- start: FOOTER -->
+                    <footer>
+                        <div class="footer-inner">
+                            <div class="pull-left">
+                                &copy; <span class="current-year"></span><span class="text-bold text-uppercase">ClipTheme</span>. <span>All rights reserved</span>
+                            </div>
+                            <div class="pull-right">
+                                <span class="go-top"><i class="ti-angle-up"></i></span>
                             </div>
                         </div>
-                    </div>
-                    <!-- end: YOUR CONTENT HERE -->
-                    <!-- =============================================================================================== -->
+                    </footer>
+                    <!-- end: FOOTER -->
                 </div>
-            </div>
-        </div>
-        <!-- start: FOOTER -->
-        <footer>
-            <div class="footer-inner">
-                <div class="pull-left">
-                    &copy; <span class="current-year"></span><span class="text-bold text-uppercase">RetailOnline</span>. <span>All rights reserved</span>
-                </div>
-                <div class="pull-right">
-                    <span class="go-top"><i class="ti-angle-up"></i></span>
-                </div>
-            </div>
-        </footer>
-        <!-- end: FOOTER -->
-    </div>
 </body>
 <!-- start: MAIN JAVASCRIPTS -->
 <script src="vendor/jquery/jquery.min.js"></script>
@@ -395,24 +320,35 @@
 <script src="vendor/jquery-cookie/jquery.cookie.js"></script>
 <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="vendor/switchery/switchery.min.js"></script>
-<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
-<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- end: MAIN JAVASCRIPTS -->
+<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/DataTables/jquery.dataTables.min.js"></script>
+<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<!-- end: JavaScript Event Handlers for this page -->
-<!-- end: CLIP-TWO JAVASCRIPTS -->
-<!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
+<script src="assets/js/table-data.js"></script>
 <script>
 jQuery(document).ready(function() {
     Main.init();
-    Index.init();
+    TableData.init();
 });
 </script>
+<script type="text/javascript">
+$(".edit-row-data").click(function() {
+    $("#unit-price").html("<input type='text' name='price' placeholder='price'>");
+    $(".edit-row-data").html("<button id= 'save-price'>Save</button>")
+})
+$(".save-price").click(function() {
+    var value = $("#unit-price").getElementById("demo").innerHTML;
+    alert(value);
+    $("#unit-price").html(value)
+    $(".edit-row-data").html("<button class= 'edit-row-data'>Edit</button>")
+
+})
+</script>
 <!-- end: JavaScript Event Handlers for this page -->
+<!-- end: CLIP-TWO JAVASCRIPTS -->
 
 </html>

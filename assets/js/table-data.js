@@ -169,6 +169,7 @@ var TableData = function() {
 		});
 		$('#sample_2').on('click', '.edit-row', function(e) {
 			e.preventDefault();
+			alert("editing it");
 			if (actualEditingRow) {
 				if (newRow) {
 					oTable.fnDeleteRow(actualEditingRow);

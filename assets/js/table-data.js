@@ -55,12 +55,12 @@ var TableData = function() {
 		function editRow(oTable, nRow) {
 			var aData = oTable.fnGetData(nRow);
 			var jqTds = $('>td', nRow);
-			jqTds[0].innerHTML = '<input type="text" class="form-control" value="' + aData[0] + '">';
-			jqTds[1].innerHTML = '<input type="text" class="form-control" value="' + aData[1] + '">';
+			jqTds[3].innerHTML = '<input type="text" class="form-control" value="' + aData[3] + '">';
+			/*jqTds[1].innerHTML = '<input type="text" class="form-control" value="' + aData[1] + '">';
 			jqTds[2].innerHTML = '<input type="text" class="form-control" value="' + aData[2] + '">';
-
-			jqTds[3].innerHTML = '<a class="save-row" href="">Save</a>';
-			jqTds[4].innerHTML = '<a class="cancel-row" href="">Cancel</a>';
+*/
+			jqTds[6].innerHTML = '<a class="save-row" href="">Save</a>';
+			jqTds[7].innerHTML = '<a class="cancel-row" href="">Cancel</a>';
 
 		}
 

@@ -516,30 +516,49 @@
                                                                 <i class="ti-home"></i> </span>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="control-label">
+                                                                <label for="control-label">
                                                                     City
                                                                 </label>
-                                                                <span class="input-icon">
-                                                                    <input placeholder="Nagpur" class="form-control"  name="city" type="email">
-                                                                <i class="fa fa-"></i> </span>
+                                                                <select id="form-field-select-1" class="form-control">
+                                                                    <option value="">Select</option>
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                    <option value="CA">California</option>
+                                                                    <option value="CO">Colorado</option>
+                                                                    <option value="CT">Connecticut</option>
+                                                                 
+                                                                </select>
                                                             </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label">
+                                                              <div class="form-group">
+                                                                <label for="control-label">
                                                                     Area
                                                                 </label>
-                                                                <span class="input-icon">
-                                                                    <input placeholder="Shivaji Nagar" class="form-control" id="firstname" name="mobile" type="text">
-                                                                <i class="fa fa-mobile"></i> </span>
+                                                                <select id="form-field-select-1" class="form-control">
+                                                                    <option value="">Select Area</option>
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                    <option value="CA">California</option>
+                                                                    <option value="CO">Colorado</option>
+                                                                    <option value="CT">Connecticut</option>
+                                                                 
+                                                                </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
+                                                              <div class="form-group">
+                                                                <label for="control-label">
                                                                     Service Type
                                                                 </label>
-                                                                <span class="input-icon">
-                                                                    <input placeholder="Vegitables" class="form-control"  name="service" type="text">
-                                                                <i class="ti-home"></i> </span>
+                                                                <select id="form-field-select-1" class="form-control">
+                                                                    <option value="">Select Service Type</option>
+                                                                   
+                                                                    <option value="CT">Vegitables</option>
+                                                                 
+                                                                </select>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="control-label">
@@ -655,9 +674,24 @@
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
 <script src="vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<script src="vendor/maskedinput/jquery.maskedinput.min.js"></script>
+<script src="vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+<script src="vendor/autosize/autosize.min.js"></script>
+<script src="vendor/selectFx/classie.js"></script>
+<script src="vendor/selectFx/selectFx.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<script src="vendor/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<!-- start: CLIP-TWO JAVASCRIPTS -->
+<script src="assets/js/main.js"></script>
+<!-- start: JavaScript Event Handlers for this page -->
+<script src="assets/js/form-elements.js"></script>
 <script>
 jQuery(document).ready(function() {
     Main.init();
+    FormElements.init();
 });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->

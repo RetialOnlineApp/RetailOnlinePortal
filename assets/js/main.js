@@ -287,7 +287,7 @@ var Main = function() {
 			$('#fixed-sidebar').prop('checked', true);
 			$('#closed-sidebar').prop('checked', false);
 			$('#fixed-footer').prop('checked', false);
-			$('#skin_color').attr("href", "assets/css/themes/theme-1.css");
+			$('#skin_color').attr("href", "assets/css/themes/theme-6.css");
 			$(".navbar-brand img").attr("src", "assets/images/logo.png");
 
 		};
